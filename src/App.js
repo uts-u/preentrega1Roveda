@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./Card";
+import "bulma/css/bulma.css"; 
+import Disco1Img from "./img/portada1.png"
+import Disco2Img from "./img/portada2.png"
+function App(){ 
+    return (
+        <div>
+            <section className="hero is-primary">
+                <div className="hero-body">
+                    <p className="title"> Discos en venta</p>
+                </div>
+            </section>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <div className="container">
+                <section className="section">
+                    <div className="columns">
+                        <div className="column is-6">
+                            <Card titulo="Sub - Isla Decepción" img={Disco1Img}/>
+                        </div>
+                        <div className="column is-6">
+                            <Card titulo= "Sub - Ofrenda" img={Disco2Img}/>
+                        </div>
+                    </div>
+                 </section>
+
+            </div>         
+        </div>
+    
+    )
 }
 
 export default App;
