@@ -1,13 +1,13 @@
 import Card from "./Card";
-import "bulma/css/bulma.css"; 
-import Disco1Img from "./img/portada1.png"
-import Disco2Img from "./img/portada2.png"
+import 'bulma/css/bulma.min.css';
+import Disco1Img from "../img/portada1.png"
+import Disco2Img from "../img/portada2.png"
 function App(){ 
     return (
         <div>
             <section className="hero is-primary">
                 <div className="hero-body">
-                    <p className="title"> Discos en venta</p>
+                    <p className="title"> Discos en venta - SUB</p>
                 </div>
             </section>
 
